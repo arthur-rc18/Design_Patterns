@@ -1,6 +1,8 @@
 package strategy_pattern;
 
 
+import strategy_pattern.concrete_strategy.Devagar;
+import strategy_pattern.concrete_strategy.Fraco;
 import strategy_pattern.personagens.Personagem1;
 
 public class Main {
@@ -12,6 +14,9 @@ public class Main {
         p.pular();
 
         System.out.println(p);
+
+        p.setAtaque(new Fraco());
+        p.setCorrer(new Devagar());
 
 
     }

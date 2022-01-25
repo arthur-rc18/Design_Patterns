@@ -4,7 +4,5 @@ import strategy_pattern.strategy.Ataque;
 
 public class Fraco extends Ataque {
     @Override
-    public void atacar() {
-
-    }
+    public void atacar() {}
 }
