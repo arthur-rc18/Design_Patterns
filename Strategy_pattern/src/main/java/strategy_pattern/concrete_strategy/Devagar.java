@@ -5,6 +5,5 @@ import strategy_pattern.strategy.Correr;
 public class Devagar extends Correr {
     @Override
     public void correr() {
-
     }
 }
