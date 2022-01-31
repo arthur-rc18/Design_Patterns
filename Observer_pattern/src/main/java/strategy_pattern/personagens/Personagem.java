@@ -10,8 +10,9 @@ import strategy_pattern.strategy.Correr;
 import strategy_pattern.strategy.Pular;
 
 import java.util.ArrayList;
+import java.util.Observable;
 
-public class Personagem {
+public class Personagem extends Observable{
 
     private Ataque a;
     private Pular p;
@@ -23,7 +24,7 @@ public class Personagem {
     private ArrayList enemies = new ArrayList();
 
 
-    public Personagem(int life){
+    public Personagem(int life, int x, int y, String nome){
         if (this.life >= 30 && this.life <= 70){
             new NormalLife(this);
         } else if(this.life > 70){
@@ -104,10 +105,15 @@ public class Personagem {
         enemies.remove(e);
     }
 
-    public void atack(Enemy e, int ataque){
+    public void attack(Enemy e, int ataque){
         if(e.getX()  == this.getX() && e.getY() == this.getY())
             e.setLife(e.getLife() - ataque);
             if(e.getLife() == 0)
                 enemies.remove(e);
+    }
+
+    public void show(){
+        setChanged();
+        notifyObservers();
     }
 }
