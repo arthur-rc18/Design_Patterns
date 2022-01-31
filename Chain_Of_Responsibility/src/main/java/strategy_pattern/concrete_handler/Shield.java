@@ -13,6 +13,8 @@ public class Shield extends Defence {
         this.shield = shield;
     }
 
+    public Shield(){}
+
     @Override
     public void shield(int damage) {
         int rest = damage - shield;
