@@ -3,10 +3,13 @@ package strategy_pattern.personagens;
 import strategy_pattern.concrete_state.DangerLife;
 import strategy_pattern.concrete_state.NormalLife;
 import strategy_pattern.concrete_state.StrongLife;
+import strategy_pattern.observers.Enemy;
 import strategy_pattern.state.StateLife;
 import strategy_pattern.strategy.Ataque;
 import strategy_pattern.strategy.Correr;
 import strategy_pattern.strategy.Pular;
+
+import java.util.ArrayList;
 
 public class Personagem {
 
@@ -17,6 +20,8 @@ public class Personagem {
     private int life;
     private int x;
     private int y;
+    private ArrayList enemies = new ArrayList();
+
 
     public Personagem(int life){
         if (this.life >= 30 && this.life <= 70){
@@ -89,5 +94,20 @@ public class Personagem {
     public void atacar(){
         a.atacar();
         System.out.println("Esta atacando");
+    }
+
+    public void addEnemie(Enemy e){
+        enemies.add(e);
+    }
+
+    public void removeEnemie(Enemy e){
+        enemies.remove(e);
+    }
+
+    public void atack(Enemy e, int ataque){
+        if(e.getX()  == this.getX() && e.getY() == this.getY())
+            e.setLife(e.getLife() - ataque);
+            if(e.getLife() == 0)
+                enemies.remove(e);
     }
 }
