@@ -9,8 +9,11 @@
         <module name="Observer_pattern" />
         <module name="Strategy_pattern" />
         <module name="State_pattern" />
-        <module name="Chain_Of_Responsibility" />
+        <module name="Chain_of_responsibility_pattern" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Chain_Of_Responsibility_pattern" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>

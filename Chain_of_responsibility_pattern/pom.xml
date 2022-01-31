@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>Chain_Of_Responsibility</artifactId>
+    <artifactId>Chain_of_responsibility_pattern</artifactId>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>

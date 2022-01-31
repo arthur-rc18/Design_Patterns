@@ -13,7 +13,9 @@ public class Shield extends Defence {
         this.shield = shield;
     }
 
-    public Shield(){}
+    public Shield() {
+
+    }
 
     @Override
     public void shield(int damage) {
