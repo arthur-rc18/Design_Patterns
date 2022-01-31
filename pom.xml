@@ -13,6 +13,7 @@
         <module>State_pattern</module>
         <module>Observer_pattern</module>
         <module>Chain_Of_Responsibility</module>
+        <module>Chain_Of_Responsibility</module>
     </modules>
 
     <properties>

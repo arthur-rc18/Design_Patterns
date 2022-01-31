@@ -9,6 +9,7 @@
         <module name="Observer_pattern" />
         <module name="Strategy_pattern" />
         <module name="State_pattern" />
+        <module name="Chain_Of_Responsibility" />
       </profile>
     </annotationProcessing>
   </component>
