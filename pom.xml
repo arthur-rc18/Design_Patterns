@@ -17,6 +17,7 @@
         <module>Chain_of_responsibility_pattern</module>
         <module>Chain_of_responsibility_pattern</module>
         <module>Decorator_pattern</module>
+        <module>Simple_Factory_Pattern</module>
     </modules>
 
     <properties>
