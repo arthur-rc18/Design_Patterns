@@ -5,6 +5,7 @@ import com.personagens.Personagem;
 import com.personagens.PersonagemA;
 import com.personagens.PersonagemB;
 import com.personagens.PersonagemC;
+import personagens.Personagem;
 
 public class JogoSimples extends Jogo {
     private static JogoSimples instancia = null;
