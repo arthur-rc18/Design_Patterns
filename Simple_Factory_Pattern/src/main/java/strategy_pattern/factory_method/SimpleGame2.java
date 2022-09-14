@@ -4,7 +4,7 @@ import strategy_pattern.concrete_strategy.*;
 import strategy_pattern.observers.Enemy;
 import strategy_pattern.personagens.Personagem;
 
-public class SimpleGame extends Game{
+public class SimpleGame2 extends Game2 {
     @Override
     public Personagem createPersonagem(int type) {
         Personagem p = new Personagem();
