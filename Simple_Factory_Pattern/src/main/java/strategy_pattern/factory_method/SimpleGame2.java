@@ -1,23 +1,23 @@
 package strategy_pattern.factory_method;
 
-import strategy_pattern.concrete_decorator.FireAttack;
-import strategy_pattern.concrete_decorator.ThunderAttack;
 import strategy_pattern.concrete_strategy.*;
 import strategy_pattern.observers.Enemy;
 import strategy_pattern.personagens.Personagem;
 
-public class AdvancedGame extends Game{
+public class SimpleGame2 extends Game2 {
     @Override
     public Personagem createPersonagem(int type) {
         Personagem p = new Personagem();
 
         if(type == 1){
-            p.setAtaque(new ThunderAttack(new Forte()));
-            p.setPular(new Alto());
-            p.setCorrer(new Devagar());
+            p.setLife(100);
+            p.setAtaque(new Fraco());
+            p.setCorrer(new Rapido());
+            p.setPular(new MedioP());
         } else if(type == 2){
-                p.setAtaque(new FireAttack(new Fraco()));
-                p.setCorrer(new Rapido());
+                p.setLife(80);
+                p.setAtaque(new Forte());
+                p.setCorrer(new Devagar());
                 p.setPular(new MedioP());
         }
         return p;

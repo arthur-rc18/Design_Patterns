@@ -47,5 +47,8 @@ public class Main {
         attack = new PoisonAttack(attack);
 
         System.out.println(attack.getDamage());
+
+        Game game = new Game();
+        game.play(game);
     }
 }

@@ -3,7 +3,7 @@ package strategy_pattern.factory_method;
 import strategy_pattern.observers.Enemy;
 import strategy_pattern.personagens.Personagem;
 
-public abstract class Game{
+public abstract class Game2 {
 
     public abstract Personagem createPersonagem(int type);
     public abstract Enemy createEnemy(int type);
